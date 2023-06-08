@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head will contain all the data to design the interface such as stylesheets, fonts and display settings  -->
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datarevamp.</title>
+    <link rel = "stylesheet" href= "./style.css">
+
+</head>
+
+<header>
+
+    <a href="#" class="logo">datarevamp<span>.</span></a>
+
+    <nav class ="navibar">
+        <a href="#brokenlinks">Broken Links</a>
+        <a href="#outdated">Outdated Data</a>
+        <a href ="#results">Results</a>
+    </nav>
+
+</header>
+
+<body>
+    <div class="choices">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Find Broken Links!</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>
+                        find broken links, get excel scheet
+                    </p>
+                    <a href="{{url_for('BWTSI')}}">Try It!</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Find Outdated Data!</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <P>old dates!<P>
+                    <a href="{{url_for('calendar')}}">Try It!</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Results!</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="Results">
+                    <P>final results</P>
+                    <a href="{{url_for('todo')}}">Try It!</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div> 
+</body>
+</html>
